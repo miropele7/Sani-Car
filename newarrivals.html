@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <!-- Menu section -->
+   <nav id="navbar">
+    <a href="index.html#home" id="logo"><img src="logo.jpg" alt="Logo" class="nav-logo" style="scale: 1.2;"></a>
+        <div class="menu-items">
+            <a href="index.html#home">Home</a>
+            <div class="dropdown adjusted">
+                <a href="inventory.html#inventory" class="dropbtn">Inventory</a>
+                <div class="dropdown-content">
+                    <a href="allcars.html#allCars">All Cars</a>
+                    <a href="newarrivals.html#newArrivals">New Arrivals</a>
+                    <a href="usedcars.html#usedCars">Used Cars</a>
+                </div>
+            </div>
+            <a href="aboutus.html#about">About Us</a>
+            <a href="contact.html#contact">Contact Us</a>
+    </div>
+    <img src="menu-icon.png" onclick="showListGroup()" alt="" class="menu-icon" style="display: none;">
+    
+</nav>
+<!-- End menu section -->
+
+<!-- Mobile menu -->
+<div class="mobile-menu-container">
+    <ul class="list-group">
+        <li class="list-group-item" aria-current="true"><a href="index.html">Home</a></li>
+        <li class="list-group-item"><a href="inventory.html">Inventory</a></li>
+        <li class="list-group-item"><a href="allcars.html">All Cars</a></li>
+        <li class="list-group-item active"><a href="newarrivals.html">New Arrivals</a></li>
+        <li class="list-group-item"><a href="usedcars.html">Used Cars</a></li>
+        <li class="list-group-item"><a href="aboutus.html">About Us</a></li>
+        <li class="list-group-item"><a href="contact.html">Contact Us</a></li>
+      </ul>
+</div>
+<!-- End mobile menu -->
+
+    <!-- New Arrivals Section -->
+    <section id="newArrivals" class="content-section">
+        <h2 style="margin-top: 100px; margin-bottom: 50px; text-align: center; font-size: 2rem; padding-inline: 150px; width: auto; text-align: left;">New Arrivals</h2>
+
+    <div class="car-grid" id="newArrivalsGrid">
+        <!-- Repeat similar blocks for each new arrival car -->
+        <div class="car-item" data-car-id="car2" onclick="openCarDescription('car2')">
+            <img src="car2.jpg" alt="Audi A4 40 TFSI S tronic S-line Avant 150 kW">
+            <h3>Audi A4 40 TFSI S tronic S-line Avant 150 kW</h3>
+            <p>61 199 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car3" onclick="openCarDescription('car3')">
+            <img src="car3.jpg" alt="BMW 330 Touring M Sport xDrive 137 kW">
+            <h3>BMW 330 Touring M Sport xDrive 137 kW</h3>
+            <p>71 299 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car4" onclick="openCarDescription('car4')">
+            <img src="car4.jpg" alt="Car 4">
+            <h3>Peugeot 3008 BlueHDi 130 S&S EAT8 Allure 96 kW</h3>
+            <p>37 099 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car5" onclick="openCarDescription('car5')">
+            <img src="car5.jpg" alt="Car 5">
+            <h3>Alfa Romeo Giulia 2.0 Veloce 206 kW</h3>
+            <p>57 549 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car6" onclick="openCarDescription('car6')">
+            <img src="car6.jpg" alt="Car 6">
+            <h3>Ford Focus 1.0 ACTIVE 92 kW</h3>
+            <p>23 249 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car7" onclick="openCarDescription('car7')">
+            <img src="car7.jpg" alt="Car 7">
+            <h3>Jeep Renegade 1.0 Limited 88 kW</h3>
+            <p>24 299 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car10" onclick="openCarDescription('car10')">
+            <img src="car10.jpg" alt="Car 10">
+            <h3>Volkswagen Polo 1.0 TSI DSG 70 kW</h3>
+            <p>23 299 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car11" onclick="openCarDescription('car11')">
+            <img src="car11.jpg" alt="Car 11">
+            <h3>Suzuki Ignis 61 kW</h3>
+            <p>18 199 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car12" onclick="openCarDescription('car12')">
+            <img src="car12.jpg" alt="Car 12">
+            <h3>Ford Puma ST-Line X 92 kW</h3>
+            <p>32 299 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car13" onclick="openCarDescription('car13')">
+            <img src="car13.jpg" alt="Car 13">
+            <h3>Volkswagen Golf 1.0 eTSI Life DSG 81 kW</h3>
+            <p>28 749 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car14" onclick="openCarDescription('car14')">
+            <img src="car14.jpg" alt="Car 14">
+            <h3>Kia Sorento 2.2 Spirit AWD 142 kW</h3>
+            <p>49 649 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car15" onclick="openCarDescription('car15')">
+            <img src="car15.jpg" alt="Car 15">
+            <h3>BMW 840i Gran 246 kW</h3>
+            <p>162 599 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car16" onclick="openCarDescription('car16')">
+            <img src="car16.jpg" alt="Car 16">
+            <h3>Skoda Fabia 59 kW</h3>
+            <p>17 899 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car17" onclick="openCarDescription('car17')">
+            <img src="car17.jpg" alt="Car 17">
+            <h3>Porsche Cayenne E-Hybrid 346 kW</h3>
+            <p>158 699 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car18" onclick="openCarDescription('car18')">
+            <img src="car18.jpg" alt="Car 18">
+            <h3>Toyota C-HR 2.0 145 kW</h3>
+            <p>39 149 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car19" onclick="openCarDescription('car19')">
+            <img src="car19.jpg" alt="Car 19">
+            <h3>Opel Astra 1.2 Turbo 81 kW</h3>
+            <p>20 349 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car20" onclick="openCarDescription('car20')">
+            <img src="car20.jpg" alt="Car 20">
+            <h3>BMW 116i 80 kW</h3>
+            <p>30 549 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car21" onclick="openCarDescription('car21')">
+            <img src="car21.jpg" alt="Car 21">
+            <h3>Toyota Corolla 1.8 Hybrid 103 kW</h3>
+            <p>32 149 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car22" onclick="openCarDescription('car22')">
+            <img src="car22.jpg" alt="Car 22">
+            <h3>Skoda Fabia 85 kW</h3>
+            <p>27 099 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car23" onclick="openCarDescription('car23')">
+            <img src="car23.jpg" alt="Car 23">
+            <h3>Suzuki Jimny 75 kW</h3>
+            <p>28 999 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car24" onclick="openCarDescription('car24')">
+            <img src="car24.jpg" alt="Car 24">
+            <h3>Ford Ranger 150 kW</h3>
+            <p>55 099 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car25" onclick="openCarDescription('car25')">
+            <img src="car25.jpg" alt="Car 25">
+            <h3>Volkswagen Polo 70 kW</h3>
+            <p>20 699 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car26" onclick="openCarDescription('car26')">
+            <img src="car26.jpg" alt="Car 26">
+            <h3>Suzuki SX4 S-Cross 75 kW</h3>
+            <p>27 599 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car27" onclick="openCarDescription('car27')">
+            <img src="car27.jpg" alt="Car 27">
+            <h3>Alfa Romeo Tonale 118 kW</h3>
+            <p>39 749 &#8364;</p>
+        </div>
+        <div class="car-item" data-car-id="car28" onclick="openCarDescription('car28')">
+            <img src="car28.jpg" alt="Car 28">
+            <h3>Dacia Sandero 74 kW</h3>
+            <p>18 049 &#8364;</p>
+        </div>
+        <div class="teaser">
+            <p>More coming soon...</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Car Description Modal -->
+    <div id="car-description-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('car-description')">&times;</span>
+        <div id="car-description-content">
+            <h2 id="car-title"></h2>
+            <img id="car-image" src="" alt="Car Image">
+            <h2 id="car-price"></h2>
+            <div class="car-descriptions">
+                <h2 id="car-description"></h2>
+                <h2 id="car-description13"></h2>
+            </div>
+            <div class="car-descriptions">
+                <p id="car-description2"></p>
+                <p id="car-description14"></p>
+            </div>
+            <div class="car-descriptions">
+                <p id="car-description3"></p>
+                <p id="car-description15"></p>
+            </div>
+            <div class="car-descriptions">
+                <p id="car-description4"></p>
+                <p id="car-description16"></p>
+            </div>
+            <div class="car-descriptions">
+                <p id="car-description5"></p>
+                <p id="car-description17"></p>
+            </div>
+            <div class="car-descriptions">
+                <p id="car-description6"></p>
+                <p id="car-description18"></p>
+            </div>
+            <div class="car-descriptions">
+                <p id="car-description7"></p>
+                <p id="car-description19"></p>
+            </div>
+            <div class="car-descriptions">
+                <p id="car-description8"></p>
+                <p id="car-description20"></p>
+            </div>
+            <div class="car-descriptions">
+                <p id="car-description9"></p>
+                <p id="car-description21"></p>
+            </div>
+            <div class="car-descriptions">
+                <p id="car-description10"></p>
+            </div>
+            <div class="car-descriptions">
+                <p id="car-description11"></p>
+            </div>
+            <div class="car-descriptions">
+                <p id="car-description12"></p>
+            </div>
+            <div class="car-descriptions">
+                <h2 id="car-description22"></h2>
+            </div>
+            <div class="car-descriptions">
+                <p id="car-description23"></p>
+            </div>
+            <div class="car-descriptions">
+                <p id="car-description24"></p>
+            </div>
+            <div class="car-descriptions">
+                <p id="car-description25"></p>
+            </div>
+            <div class="car-descriptions">
+                <p id="car-description26"></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+<footer>
+    <div class="footer1">
+        <div class="footer-content">
+            <h2>Contact us</h2>
+            <li><span class="nadpis">Main phone:</span></li>
+            <span class="text">+421 918 270 039</span>
+            <li><span class="nadpis">Mail:</span></li>
+            <span class="text">sanicars.4@gmail.com</span>
+        </div>
+        <div class="footer-content">
+            <h2>Quick links</h2>
+            <a href="inventory.html#inventory" class="papiere">Inventory</a>
+            <a href="aboutus.html#about" class="papiere">About</a>
+            <a href="contact.html#contact" class="papiere">Contact</a>
+            <a href="privacy-policy.html#privacy-policy" class="papiere">Privacy policy</a>
+        </div>
+        <div class="footer-content">
+            <a href="terms-and-conditions.html#terms-and-conditions" class="papiere">Terms and conditions</a>
+            <a href="refund-policy.html#refund-policy" class="papiere">Refund policy</a>
+            <a href="cookie-policy.html#cookie-policy" class="papiere">Cookie policy</a>
+            <a href="disclaimer.html#disclaimer" class="papiere">Disclaimer</a>
+        </div>
+    </div>
+    <div class="footer2">
+        <p class="copy-info">&copy; 2024 SaniCar.com</p>
+        <p class="copy-info2">All rights reserved</p>
+    </div>
+</footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
